@@ -489,17 +489,17 @@
         <!-- footer-subscribe -->
         <div class="footer-subscribe">
           <p class="footer-subscribe__title">Подпишитесь на рассылку</p>
-          <form>
+          <form class="footer-form">
             <input
-              class="footer-subscribe__input"
+              class="footer-input"
               type="email"
               name="email"
               placeholder="E-mail"
             />
 
-            <button type="submit" class="footer-subscribe__button">
+            <button type="submit" class="footer-button">
               Подписаться
-              <span class="footer-subscribe__img"
+              <span class="footer-button__img"
                 ><img src="./images/icon_send.svg" alt="иконка сенд" />
               </span>
             </button>
@@ -508,22 +508,24 @@
       </div>
     </footer>
     <!--backdrop-->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
-        <button class="m-button" data-modal-close>
+        <button class="modal-button" data-modal-close>
           <!-- <svg class="img-close" width="30" height="30">
             <use href="./images/symbol-defs.svg#icon-close_modal"></use>
           </svg> -->
         </button>
-        <div class="form-modal">
-          <p class="subscribe-form">Оставьте свои данные, мы вам перезвоним</p>
-          <form class="form-modal-subscribe">
+        <div class="modal-form">
+          <p class="modal-form__text">
+            Оставьте свои данные, мы вам перезвоним
+          </p>
+          <form class="modal-form-subscribe">
             <div class="form-field">
-              <label class="form-label"
+              <label class="form-field__label"
                 >Имя
 
                 <input type="text" class="form-input" name="name" />
-                <span class="form-input-img">
+                <span class="form-input__img">
                   <svg class="form-img" width="18" height="18">
                     <use href="./images/symbol-defs.svg#icon-user"></use>
                   </svg>
@@ -532,10 +534,10 @@
             </div>
 
             <div class="form-field">
-              <label class="form-label"
+              <label class="form-field__label"
                 >Телефон
                 <input type="tel" class="form-input" name="phone_number" />
-                <span class="form-input-img">
+                <span class="form-input__img">
                   <svg class="form-img" width="18" height="18">
                     <use href="./images/symbol-defs.svg#icon-phone"></use>
                   </svg>
@@ -544,10 +546,10 @@
             </div>
 
             <div class="form-field">
-              <label class="form-label"
+              <label class="form-field__label"
                 >Почта
                 <input type="email" class="form-input" name="email" />
-                <span class="form-input-img">
+                <span class="form-input__img">
                   <svg class="form-img" width="18" height="18">
                     <use href="./images/symbol-defs.svg#icon-email"></use>
                   </svg>
@@ -556,7 +558,7 @@
             </div>
 
             <div class="form-field">
-              <label class="form-label"
+              <label class="form-field__label"
                 >Комментарий
                 <textarea
                   class="form-comments"
@@ -567,7 +569,7 @@
                 </textarea>
               </label>
             </div>
-            <div class="acceptation">
+            <div class="form-acceptation">
               <label class="checkbox-label"
                 ><input
                   class="checkbox"
@@ -579,12 +581,10 @@
                 <a href="Условия_договора" class="conditions"
                   >Условия договора</a
                 >
-                <span class="checkbox-icon"> </span>
+                <span class="checkbox__icon"> </span>
               </label>
 
-              <button class="form-accept-button" type="submit">
-                Отправить
-              </button>
+              <button class="accept-button" type="submit">Отправить</button>
             </div>
           </form>
         </div>
