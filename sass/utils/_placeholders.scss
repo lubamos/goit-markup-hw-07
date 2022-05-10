@@ -1,13 +1,10 @@
-ul,
-h1,
-h2,
-h3,
-p {
+%zero {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 }
-.container {
+
+%container {
   margin-right: auto;
   margin-left: auto;
   width: 1200px;
@@ -15,7 +12,7 @@ p {
   padding-right: 15px;
   outline: 2px solid tomato;
 }
-.container.foot {
+%foot {
   display: flex;
   align-items: baseline;
 }
